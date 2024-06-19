@@ -3,7 +3,7 @@ name: Build and Deliver Docker Package
 on:
   push:
     branches:
-      - master # Change this to your main branch
+      - main # Change this to your main branch
 
 env:
   REGISTRY: ghcr.io
@@ -45,7 +45,6 @@ jobs:
         with:
           context: .
           platforms: linux/arm/v6,linux/arm/v7,linux/amd64,linux/arm64
-          file: ./Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
