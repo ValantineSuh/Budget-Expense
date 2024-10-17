@@ -1,3 +1,6 @@
+[![Build and Deliver Docker Package](https://github.com/ValantineSuh/Budget-Expense/actions/workflows/main.yml/badge.svg)](https://github.com/ValantineSuh/Budget-Expense/actions/workflows/main.yml)
+
+
 # Budget Expense Tracker
 A simple Java-based terminal application to help you track and manage expenses efficiently. Built with **Maven** for easy dependency management.
 
