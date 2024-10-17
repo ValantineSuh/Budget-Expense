@@ -49,7 +49,7 @@ mvn -version
 ## Installation
 1) Clone the project from the repository:
     ```bash
-    git clone https://github.com/your-username/budget-expense-tracker.git
+    https://github.com/ValantineSuh/Budget-Expense-Tracker.git
     ```
 
 2) Navigate to the project directory:
