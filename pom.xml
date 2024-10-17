@@ -9,12 +9,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source> 
+        <maven.compiler.target>17</maven.compiler.target> 
     </properties>
 
-    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok-maven-plugin -->
-    <!-- To avoid the use of boilerplate codes -->
+    <!-- Dependency for Lombok to reduce boilerplate code -->
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -25,14 +24,24 @@
     </dependencies>
 
     <build>
-    <plugins>
-         <!-- This plugin is used for executing unit tests during the Maven build process -->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.0.0-M5</version> <!-- Or the latest version -->
-        </plugin>
-    </plugins>
-</build>
+        <plugins>
+            <!-- Plugin for executing unit tests during the Maven build process -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version> <!-- Or the latest version -->
+            </plugin>
+            <!-- Optional: Add the Maven Compiler Plugin to specify the compiler version -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version> <!-- Use the latest version available -->
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
